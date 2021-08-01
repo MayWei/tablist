@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tab.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tabs">
+      <div class="tabsgroups" >
+        <label id="Entertainment">Entertainment</label>
+        <div role="tablist" aria-labelledby="Entertainment">
+          <button role="tab"
+                  aria-selected="true"
+                  aria-controls="nils-tab"
+                  id="nils"
+                 >
+            Nils Frahm
+          </button>
+          <button role="tab"
+                  aria-selected="false"
+                  aria-controls="agnes-tab"
+                  id="agnes"
+                  tabindex="-1">
+            Agnes Obel
+          </button>
+          <button role="tab"
+                  aria-selected="false"
+                  aria-controls="jokejoke"
+                  id="joke"
+                  tabindex="-1"
+                  data-deletable="">
+            Joke
+          </button>
+        </div>
+        <div tabindex="0"
+             role="tabpanel"
+             id="nils-tab"
+             aria-labelledby="nils">
+          <p>
+            Nils Frahm is a German musician, composer and record producer based in Berlin. He is known for combining classical and electronic music and for an unconventional approach to the piano in which he mixes a grand piano, upright piano, Roland Juno-60, Rhodes piano, drum machine, and Moog Taurus.
+          </p>
+          <p id="nilsFrahmPage">
+          </p>
+          <label for="nilsFrahm">Tell us what you know about Nils Frahm</label>
+         
+          <textarea id="nilsFrahm" name="nilsFrahm"
+                    rows="5" cols="33">
+          
+          </textarea>
+        </div>
+        <div tabindex="0"
+             role="tabpanel"
+             id="agnes-tab"
+             aria-labelledby="agnes"
+             hidden="">
+          <p>
+            Agnes Caroline Thaarup Obel is a Danish singer/songwriter. Her first album, Philharmonics, was released by PIAS Recordings on 4 October 2010 in Europe. Philharmonics was certified gold in June 2011 by the Belgian Entertainment Association (BEA) for sales of 10,000 Copies.
+          </p>
+
+        </div>
+        <div tabindex="0"
+             role="tabpanel"
+             id="jokejoke"
+             aria-labelledby="joke"
+             hidden="">
+          <p>
+            Fear of complicated buildings:
+          </p>
+          <p>
+            A complex complex complex.
+          </p>
+        </div>
+        <p>Click me to link to</p>
+        <button class="link">Nils Frahm</button>
+        <button class="link">Agnes Obel</button>
+        <button class="link">Joke</button>        
+      </div>
+      <div class="tabsgroups" >
+        <label id="Quora">Quora</label>
+        <div role="tablist" aria-labelledby="Quora"
+              aria-orientation="vertical">
+          <button role="tab"
+                  aria-selected="true"
+                  aria-controls="forms-tab"
+                  id="forms"
+                  >
+            Forms
+          </button>
+          <button role="tab"
+                  aria-selected="false"
+                  aria-controls="elephant-tab"
+                  id="elephant"
+                  tabindex="-1">
+            Elephant Mary
+          </button>
+          <button role="tab"
+                  aria-selected="false"
+                  aria-controls="catww1catww1"
+                  id="cat"
+                  tabindex="-1"
+                  data-deletable="">
+            Cat in WW1
+          </button>
+          <button role="tab"
+                  aria-selected="false"
+                  aria-controls="endangered-animal-tab"
+                  id="endangered"
+                  tabindex="-1"
+                  data-deletable="">
+            Endangered Animal
+          </button>
+        </div>
+            <div tabindex="0"
+             role="tabpanel"
+             id="forms-tab"
+             aria-labelledby="forms"
+             >
+          <p>
+            Quora’s mission is to share and grow the world’s knowledge. Not all knowledge can 
+            be written down, but much of that which can be, still isn't. To use Quora, you need
+            to register first.
+          </p>
+          <h2>Register</h2>
+          <div class="wrap">
+              <form name="quoraform">
+                  <ul>
+                      <li><span class="need" id="ndName">*</span>&nbsp;Full&nbsp;Name&nbsp;&nbsp;<input type="text" name="username" id="fullname" value=""></li>
+                      <li><span class="need" id="ndPhone">*</span>&nbsp;Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" id="email" value=""></li>
+                      <li><span class="need" id="ndSex">*</span>&nbsp;Gender&nbsp;&nbsp;&nbsp;&nbsp;
+                          <input type="radio" value="male" name="gender" checked="checked">Male&nbsp;&nbsp;&nbsp;
+                          <input type="radio" value="female" name="gender">Female
+                      </li>
+                      <li>
+                          <span class="need" id="ndInterests">*</span>&nbsp;Interests&nbsp;&nbsp;&nbsp;&nbsp;
+                          <table class="tb">
+                              <tr>
+                                  <td><input type="checkbox" name="interests" value="movie">Movie</td>
+                                  <td><input type="checkbox" name="interests" value="history">History</td>
+                                  <td><input type="checkbox" name="interests" value="science">Science</td>
+                              </tr>
+                              <tr>
+                                      <td><input type="checkbox" name="interests" value="food">Food</td>
+                                      <td><input type="checkbox" name="interests" value="health">Health</td>
+                                      <td><input type="checkbox" name="interests" value="geography">Geography</td>
+                              </tr>
+                          </table>
+                      </li>
+                      <li>
+                          <input type="submit" value="submit" class="btn btn-primary"">
+                      </li>
+                  </ul>
+              </form>
+            </div>
+        </div>
+        <div tabindex="0"
+             role="tabpanel"
+             id="elephant-tab"
+             aria-labelledby="elephant"
+             hidden="">
+          <h2>Why was Big Mary the elephant hanged?</h2>
+          <p>
+            Big Mary was hanged because people are ignorant.
+          </p>
+          <p>
+          They didn't realize that capturing a beautiful, majestic creature would be suffering
+           her a life of enslavement and torture. They didn't realize that elephants living a 
+           “glamorous” life under the Big Top, wouldn't be a delightful experience for her, 
+           and possibly even worse than the hardships she faced in the wilds.
+          </p>
+        </div>
+        <div tabindex="0"
+             role="tabpanel"
+             id="catww1catww1"
+             aria-labelledby="cat"
+             hidden="">
+          <p>
+            This is something I read recently that was quite remarkable:
+
+            “Interestingly, there were around 500,000 cats who served as mascots on the Western Front in WW1. Soldiers would share their rations with the cats.
+
+            As well as being a comfort for soldiers in a very horrible and dangerous environment, the cats helped keep the rat population down in the trenches.”
+          </p>
+        </div>
+        <div tabindex="0"
+             role="tabpanel"
+             id="endangered-animal-tab"
+             aria-labelledby="endangered"
+             hidden="">
+          <p>
+            “You are looking at the most dangerous animal in the world. It alone of all the animals that ever lived can exterminate (and has) entire species of animals. Now it has the power to wipe out all life on earth.”
+
+            This exhibit speaks to the power humanity has.
+          </p>
+        </div>
+      <p>Click me to link to</p>
+      <button class="link">Forms Gathering</button>
+      <button class="link">Elephant Mary</button>
+      <button class="link">Cat in WW1</button>
+      <button class="link">Endangered Animal</button>
+      <div>
+    </div>  
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
